@@ -1,6 +1,5 @@
 ﻿using L2_23;
-using System;
-using System.Security.Cryptography.X509Certificates;
+
 class Program
 {
     static void Main()
