@@ -68,6 +68,20 @@
         {
             return $"\n[{_x}, {_y}]";
         }
+        
+         public static double GetValid (string prompt)
+        {
+            double value;
+            while (true)
+            {
+                Console.Write(prompt);
+                if (double.TryParse(Console.ReadLine(), out value))
+                {
+                    return value;
+                }
+                Console.WriteLine("Некорректный ввод.");
+            }
+         }
     }
 }
 
